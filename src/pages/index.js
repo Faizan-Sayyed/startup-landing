@@ -19,6 +19,7 @@ export default function IndexPage() {
           title="Skilzen"
           description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!"
         />
+        <link rel = 'short ' type='image' href='src/assets/images/emoji'></link>
         <Banner />
         <Connect />
         <PremiumFeature />

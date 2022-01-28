@@ -13,6 +13,8 @@ import BarChart from 'components/icons/bar-chart';
 import dashboard from 'assets/images/dashboard.png';
 import dashboard1 from 'assets/images/dashboard1.png';
 import dashboard2 from 'assets/images/dashboard2.png';
+import dashboard3 from 'assets/images/dashboard3.png';
+import dashboard4 from 'assets/images/dashboard4.png';
 
 
 const data = [
@@ -23,6 +25,7 @@ const data = [
         icon: <Currency />,
         title: 'CollegeKing',
       },
+
     ],
     tabContent: [
       {
@@ -79,7 +82,7 @@ class 12 students for exploring colleges and streams.`,
     ],
     tabContent: [
       {
-        image: dashboard,
+        image: dashboard3,
         title: `Get guidance from industry experts with  our mentoring platform.`,
         description: `The yet-to-be-named platform focuses on providing mentorship to students through industry experts and making the mentoring process easily accessible to all student in need of mentorship and guidance.`,
         readMore: '#introduce-quality',
@@ -96,7 +99,7 @@ class 12 students for exploring colleges and streams.`,
     ],
     tabContent: [
       {
-        image: dashboard,
+        image: dashboard4,
         title: `Cater to all your material requirements with our e-commerce platform`,
         description: `The yet-to-be-named platform focuses on fulfiling the material needs of its users and to provide a comfortable user experience through its design and
         interactive sessions.`,

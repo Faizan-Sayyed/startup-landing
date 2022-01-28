@@ -1,49 +1,37 @@
 /** @jsx jsx */
 import { jsx, Container, Grid, Box, Flex, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
-import connect from 'assets/images/support.png';
+import support from 'assets/images/support.png';
 import rightArrow from 'assets/images/icons/right-arrow.png';
-import { useState } from 'react';
 
 const data = [
   {
     id: 1,
-    icon: connect,
-    title: 'Become an Investor for Skilzen',
-    description: `Help us grow our services by becoming an investor for skilzen.`,
-    
+    icon: support,
+    title: 'Do you need help support',
+    description: `Get your website ads tests delivered at let collect sample from the victory of the update managements services.`,
   },
   {
     id: 2,
-    icon: connect,
-    title: 'Join the Skilzen Team',
-    description: `Joing our team and extend your support for the cause we all love.`,
+    icon: support,
+    title: 'Do you need help support',
+    description: `Get your website ads tests delivered at let collect sample from the victory of the update managements services.`,
   },
 ];
 
-
-
-const Connect = () => {
-  const[myName, setMyName] = useState(data);
-  var emai = "faixanfra";
-const changetext = ()=> {
-  let val = myName;
-  val = data ?
-  setMyName(data) : setMyName(emai)
-}
-
+const Support = () => {
   return (
     <Box as="section" id="connect" sx={styles.section}>
       <Container>
-        <Grid sx={styles.grid}  >
+        <Grid sx={styles.grid}>
           {data?.map((item) => (
-            <Flex onClick = {changetext} key={item.id} sx={styles.supportItem}>
-              <Flex  onClick = {changetext} as="figure" sx={styles.media}>
-                <Image  onClick = {changetext} src={item?.icon} alt={item?.title} />
+            <Flex key={item.id} sx={styles.supportItem}>
+              <Flex as="figure" sx={styles.media}>
+                <Image src={item?.icon} alt={item?.title} />
               </Flex>
-              <Box  onClick = {changetext} sx={styles.content}>
+              <Box sx={styles.content}>
                 <Heading>
-                  {item?.title} <Image  onClick = {changetext} src={rightArrow} alt="rightArrow" />
+                  {item?.title} <Image src={rightArrow} alt="rightArrow" />
                 </Heading>
                 <Text as="p">{item?.description}</Text>
               </Box>
@@ -55,7 +43,7 @@ const changetext = ()=> {
   );
 };
 
-export default Connect;
+export default Support;
 
 const styles = {
   section: {
@@ -65,7 +53,6 @@ const styles = {
   grid: {
     gap: ['30px 30px'],
     justifyContent: 'center',
-    cursor: 'pointer',
     gridTemplateColumns: [
       'repeat(1, 1fr)',
       null,

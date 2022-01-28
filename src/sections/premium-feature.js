@@ -35,7 +35,7 @@ const PremiumFeature = () => {
         <Grid sx={styles.grid}>
           <div className='bord'sx={styles.bord}>
           <Box as="figure" sx={styles.illustration}>
-            <Image src={messenger} alt="messenger" />
+            <Image sx={styles.imm} src={messenger} alt="messenger" />
           </Box></div>
           <Box sx={styles.rightContent}>
             <SectionHeading
@@ -57,6 +57,10 @@ const PremiumFeature = () => {
 export default PremiumFeature;
 
 const styles = {
+  imm:{
+    height:'419px',
+    width:'832px',
+  },
   section: {
     pt: [6, null, null, 6, 8, 9],
     pb: [6, null, null, null, 7, 9, 11, null],
@@ -77,7 +81,7 @@ const styles = {
     textAlign: ['left', null, null, 'center', 'left'],
     ml: [null, null, null, 'auto'],
     maxWidth: [null, null, null, 520, 660],
-    h2: {
+    h1: {
       fontSize: [null, null, null, 10, 8, 10, 40],
 
     },
@@ -96,7 +100,7 @@ const styles = {
     borderRadius:7000,
     backgroundcolor: "#353448",
 
-height: "500px",
+height: "400px",
 screenLeft: "164px",
 screenTop: "1223px",
 rightContent:"500px",

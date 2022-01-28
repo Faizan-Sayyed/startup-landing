@@ -53,7 +53,7 @@ const AppFeature = () => {
             </Box>
           </Box>
           <Box sx={styles.illustration}>
-            <Image src={app} alt="workHard" />
+            <Image sx={styles.appp} src={app} alt="workHard" />
           </Box>
         </Grid>
       </Container>
@@ -75,12 +75,18 @@ const styles = {
     gridTemplateColumns: ['0.9fr 1.1fr'],
     alignItems: 'center',
   },
+  
+  appp: {
+    height:'700px',
+    width:'700px',
+  },
+  
   heading: {
-    maxWidth: ['auto', null, null, '495px', 'auto'],
+    maxWidth: ['auto', null, null, '462px', 'auto'],
     textAlign: ['center', null, null, null, 'left'],
     mb: ['300px'],
     ml: [0],
-    h2: {
+    h1: {
       color: 'heading',
       fontSize: ['24px', null, null, '36px', '31px', 10, 40],
       lineHeight: [1.33, 1.33, 1.26, null, 1.5, 1.26],
@@ -91,7 +97,7 @@ const styles = {
       maxWidth: [24, null, null, 30, 25, null, '100%'],
       top: ['4px', '8px', null, null, '4px', '8px'],
       '@media screen and (min-width: 1441px) and (max-width:1600px)': {
-        maxWidth: 35,
+        maxWidth: 50,
       },
     },
     p: {
@@ -128,10 +134,10 @@ const styles = {
   },
   accordionGroup: {
     position: "absolute",
-        width: "460px",
+        width: "420px",
     height: "80px",
-    left: "129px",
-    top: "1918px",
+    left: "109px",
+    top: "1680px",
 
       m: [null, null, null, '0 auto', 'unset'],
     maxWidth: [null, null, null, 600, 'none'],

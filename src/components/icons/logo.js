@@ -19,7 +19,7 @@ const styles = {
     alignItems: 'left',
     mt: [9, null, null, null, 1],
     img: {
-     
+     color:'white',
      
 width: '123.15px',
 height: '23.86px',
