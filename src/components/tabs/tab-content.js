@@ -1,14 +1,50 @@
 /** @jsx jsx */
-import { jsx, Box, Heading, Text, Button } from 'theme-ui';
+import { jsx, Box, Heading, Text, Button , Link} from 'theme-ui';
+
+
+
 
 const TabContent = ({ tabContent }) => {
+
+    const handleClick = () => {
+     window.open("http://www.google.com");}
+    
+    
+      
+
+  
   return tabContent.map((item, index) => (
     <Box key={index} sx={styles.tabContent}>
       <Box sx={styles.content}>
         <Heading>{item.title}</Heading>
         <Text as="p">{item.description}</Text>
-        <Button sx={styles.more}>More Details</Button>
+        
+        <Button  sx={styles.more} onClick = {handleClick} 
+     >
+     More Details
+      </Button> 
+
+    
       </Box>
+
+
+
+ {/* function App() { } 
+  const handleClick = () => {
+    window.open("http://twitter.com/saigowthamr");
+  };
+
+  return (
+    <div>
+      <h2>App</h2>
+      <button onClick={handleClick}>Twitter</button>
+    </div>
+  );
+}
+
+export default App;*/}
+
+
       <Box
         sx={{ backgroundImage: `url(${item?.image})`, ...styles.illustration }}
       />
@@ -16,7 +52,7 @@ const TabContent = ({ tabContent }) => {
   ));
 };
 
-export default TabContent;
+export default TabContent ;
 
 const styles = {
   tabContent: {
@@ -26,6 +62,7 @@ const styles = {
   },
   more:{
     backgroundColor:'#EC1D25',
+    
   },
   content: {
     maxWidth: [480, null, null, 580, 480],

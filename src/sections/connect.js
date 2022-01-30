@@ -11,7 +11,7 @@ const data = [
     icon: connect,
     title: 'Become an Investor for Skilzen',
     description: `Help us grow our services by becoming an investor for skilzen.`,
-    
+
   },
   {
     id: 2,
@@ -21,31 +21,46 @@ const data = [
   },
 ];
 
-
+var email = "faixanfra";
 
 const Connect = () => {
-  const[myName, setMyName] = useState(data);
-  var emai = "faixanfra";
-const changetext = ()=> {
-  let val = myName;
-  val = data ?
-  setMyName(data) : setMyName(emai)
-}
+
+  
+  const [flip, setflip] = useState(false);
+  const changetext = () => {
+    let val = flip;
+    (val === data) ?
+      setflip(email) : setflip(data);
+  }
 
   return (
+
+
+
     <Box as="section" id="connect" sx={styles.section}>
+      <div
+      onClick={() => setflip(!flip)}>
+      </div>
+
+      <div className='hello'> 
+      "faixanfra";
+        <div className='back '>{data.title}
+        </div>
+        {flip ? data.title : data.description}
+      </div>
       <Container>
         <Grid sx={styles.grid}  >
           {data?.map((item) => (
-            <Flex onClick = {changetext} key={item.id} sx={styles.supportItem}>
-              <Flex  onClick = {changetext} as="figure" sx={styles.media}>
-                <Image  onClick = {changetext} src={item?.icon} alt={item?.title} />
+            <Flex key={item.id} sx={styles.supportItem} onClick={() => setflip(!flip)}>
+              <Flex as="figure" sx={styles.media} onClick={() => setflip(!flip)}>
+                <Image src={item?.icon} alt={item?.title} onClick={() => setflip(!flip)} />
               </Flex>
-              <Box  onClick = {changetext} sx={styles.content}>
+              <Box sx={styles.content} onClick={changetext}>
                 <Heading>
-                  {item?.title} <Image  onClick = {changetext} src={rightArrow} alt="rightArrow" />
+                  {item?.title} <Image src={rightArrow} alt="rightArrow"/>
                 </Heading>
-                <Text as="p">{item?.description}</Text>
+
+                <Text as="p">{item?.description}  </Text>
               </Box>
             </Flex>
           ))}
@@ -61,6 +76,10 @@ const styles = {
   section: {
     pt: [9, null, null, 10, 11, 11, 11],
     pb: [7, null, null, 8, null, 9, 10],
+  },
+  hello:{
+
+    
   },
   grid: {
     gap: ['30px 30px'],
@@ -85,6 +104,10 @@ const styles = {
     ':hover': {
       backgroundColor: 'white',
       boxShadow: '0px 15px 60px rgba(63, 90, 130, 0.12)',
+      
+      ':onClick': {
+        backgroundColor: 'red',
+      }
     },
   },
   media: {

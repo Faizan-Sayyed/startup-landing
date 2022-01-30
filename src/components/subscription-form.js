@@ -17,7 +17,7 @@ const SubscriptionForm = ({ buttonLabel, ...props }) => {
       <Input
         type="email"
         id={`email-${id}`}
-        placeholder="Enter your email"
+        placeholder ="Enter your email"
       />
       <Button  >{buttonLabel ?? 'Get Started'}</Button>
     </Flex>
@@ -33,8 +33,15 @@ const styles = {
       p: ['0 20px', null, null, null, '0 25px'],
       minHeight: [60],
       height: 'auto',
+      backgroundColor:  '#EC1D25',
       width: 'auto',
-      
+      border: '#EC1D25',
+
+      placeholder: {
+        border : "#EC1D25",
+
+      },
+    
     },
     button: {
       ml: [3],
