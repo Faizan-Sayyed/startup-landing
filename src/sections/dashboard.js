@@ -146,6 +146,7 @@ const Dashboard = () => {
             <TabPane key={tab?.id} tab={<TabTitle tab={tab.tabPane} />}>
               <TabContent 
               
+              
               tabContent={tab?.tabContent} 
               /> 
             </TabPane>

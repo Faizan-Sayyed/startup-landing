@@ -121,6 +121,9 @@ const styles = {
   illustration: {
     mb: [0, null, null, null, '-150px', '-260px'],
     mt: [0],
+    
+    width:"120%",
+    
     zIndex: '-1',
     img: {
       display: ['none', null, null, null, 'block'],
@@ -128,6 +131,11 @@ const styles = {
     '@media screen and (max-width: 767px)': {
       background: `transparent url(${app}) no-repeat center top / cover`,
       width: '100%',
+      minHeight: 310,
+      marginBottom: 40,
+    }, '@media screen and (max-width: 1022px)': {
+      background: `transparent url(${app}) no-repeat center top / cover`,
+      width: '80%',
       minHeight: 310,
       marginBottom: 40,
     },

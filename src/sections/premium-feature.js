@@ -78,6 +78,8 @@ const styles = {
     ],
   },
   heading: {
+   
+    
     textAlign: ['left', null, null, 'center', 'left'],
     ml: [null, null, null, 'auto'],
     maxWidth: [null, null, null, 520, 660],
@@ -91,8 +93,8 @@ const styles = {
   },
   illustration: {
     mb: [-6, null, null, -8, 0],
-   top:"120px",
-   height:"500px"
+   
+   width:"100%",
 
 
   },

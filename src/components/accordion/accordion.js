@@ -55,6 +55,7 @@ export default function Accordion({ items, ...props }) {
 
 const styles = {
   accordion: {
+   
     backgroundColor: '#F6F8FB',
     borderRadius: 10,
     p: ['15px', '20px 30px', '30px 45px', '20px 25px', '20px 35px'],
