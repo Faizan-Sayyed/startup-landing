@@ -67,6 +67,9 @@ const styles = {
   },
   grid: {
     alignItems: 'center',
+    // '@media screen  ': {
+    // margin:-7,
+    // },
     gridTemplateColumns: [
       '1fr',
       null,
@@ -94,8 +97,10 @@ const styles = {
   illustration: {
     mb: [-6, null, null, -8, 0],
    
-   width:"100%",
-
+  //  width:"700px",
+  //  '@media screen and (max-width:602px) ': {
+  //   maxWidth: 200,
+  // },
 
   },
   bord :{

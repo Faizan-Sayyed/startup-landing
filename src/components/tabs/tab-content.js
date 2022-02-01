@@ -19,7 +19,7 @@ const TabContent = ({ tabContent }) => {
         <Heading>{item.title}</Heading>
         <Text as="p">{item.description}</Text>
         
-        <Button  sx={styles.more} onClick = {handleClick} 
+        <Button  sx={styles.more} onClick={item.function}
      >
      More Details
       </Button> 

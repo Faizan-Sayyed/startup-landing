@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx, Flex, Box, Text, Container } from 'theme-ui';
 import { rgba } from 'polished';
-import Logo from 'components/logo';
+import logowhite from 'assets/images/logo-white.png'
+
 import { NavLink } from 'components/link';
 import { useState } from 'react';
 
@@ -46,7 +47,7 @@ export default function Footer() {
       <Container>
         <Flex sx={styles.footerInner}>
           <Flex sx={styles.copyright}>
-            <Logo isWhite />
+           <img src={logowhite}alt='logo'/>
             <Text as="span">
               &copy; Copyright by {new Date().getFullYear()} Skilzen
             </Text>

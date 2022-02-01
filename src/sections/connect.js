@@ -11,61 +11,62 @@ const data = [
     icon: connect,
     title: 'Become an Investor for Skilzen',
     description: `Help us grow our services by becoming an investor for skilzen.`,
-
+function:function() {
+  window.open("mailto:pavan.teja@skilzen.com")
+},
   },
   {
     id: 2,
     icon: connect,
     title: 'Join the Skilzen Team',
     description: `Joing our team and extend your support for the cause we all love.`,
+    function:function() {
+      window.open('mailto:hr@skilzen.com')
+    
+    },
   },
 ];
 
-var email = "faixanfra";
+
+
 
 const Connect = () => {
 
   
-  const [flip, setflip] = useState(false);
-  const changetext = () => {
-    let val = flip;
-    (val === data) ?
-      setflip(email) : setflip(data);
-  }
-
+  
   return (
-
+<Box>
 
 
     <Box as="section" id="connect" sx={styles.section}>
-      <div
-      onClick={() => setflip(!flip)}>
-      </div>
+    
 
-      <div className='hello'> 
-      "faixanfra";
-        <div className='back '>{data.title}
-        </div>
-        {flip ? data.title : data.description}
-      </div>
+     
       <Container>
+        
         <Grid sx={styles.grid}  >
           {data?.map((item) => (
-            <Flex key={item.id} sx={styles.supportItem} onClick={() => setflip(!flip)}>
-              <Flex as="figure" sx={styles.media} onClick={() => setflip(!flip)}>
-                <Image src={item?.icon} alt={item?.title} onClick={() => setflip(!flip)} />
+            <Flex key={item.id} sx={styles.supportItem} >
+              <Flex onClick={item.function} as="figure" sx={styles.media} >
+                <Image  onClick={item.function} src={item?.icon} alt={item?.title}  />
               </Flex>
-              <Box sx={styles.content} onClick={changetext}>
+              <Box sx={styles.content} >
+            
                 <Heading>
-                  {item?.title} <Image src={rightArrow} alt="rightArrow"/>
+                  {item?.title}   <Image src={rightArrow} alt="rightArrow" onClick={item.function}/>
                 </Heading>
 
-                <Text as="p">{item?.description}  </Text>
+                <Text as="p"  onClick={item.function}>{item?.description}  </Text>
               </Box>
             </Flex>
           ))}
         </Grid>
+       
       </Container>
+    </Box>
+    
+  
+   
     </Box>
   );
 };
@@ -77,14 +78,14 @@ const styles = {
     pt: [9, null, null, 10, 11, 11, 11],
     pb: [7, null, null, 8, null, 9, 10],
   },
-  hello:{
-
-    
-  },
+ 
   grid: {
+    
     gap: ['30px 30px'],
     justifyContent: 'center',
     cursor: 'pointer',
+    
+    
     gridTemplateColumns: [
       'repeat(1, 1fr)',
       null,
@@ -92,24 +93,27 @@ const styles = {
       'repeat(2, 1fr)',
       null,
       'repeat(2, 540px)',
+      
     ],
   },
   supportItem: {
+  
     backgroundColor: '#F6F8FB',
     borderRadius: 7,
     flexDirection: ['column', null, null, null, null, 'row'],
     alignItems: 'flex-start',
     p: ['25px 25px 20px', null, null, null, '35px 30px', '45px 40px 50px'],
     transition: '0.3s ease-in-out 0s',
+    
     ':hover': {
       backgroundColor: 'white',
       boxShadow: '0px 15px 60px rgba(63, 90, 130, 0.12)',
+     
+     
       
-      ':onClick': {
-        backgroundColor: 'red',
+     
       }
     },
-  },
   media: {
     alignItems: 'center',
     mr: [6],
@@ -117,6 +121,7 @@ const styles = {
     minWidth: [80],
     img: {
       maxWidth: [60, null, null, null, null, '100%'],
+     
     },
   },
   content: {

@@ -77,7 +77,7 @@ const styles = {
   },
   
   appp: {
-    height:'700px',
+    height:'800px',
     width:'700px',
   },
   
@@ -122,7 +122,7 @@ const styles = {
     mb: [0, null, null, null, '-150px', '-260px'],
     mt: [0],
     
-    width:"120%",
+   
     
     zIndex: '-1',
     img: {
@@ -142,13 +142,49 @@ const styles = {
   },
   accordionGroup: {
     position: "absolute",
-        width: "420px",
+        width: "350px",
     height: "80px",
     left: "109px",
-    top: "1730px",
+    top: "1750px",
 
       m: [null, null, null, '0 auto', 'unset'],
     maxWidth: [null, null, null, 600, 'none'],
+    '@media screen and (max-width: 1326px)': {
+top:"1650px",
+    },
+    '@media screen  and (max-width: 1182px)': {
+      top:"1950px",
+          },
+          '@media screen  and (max-width: 1094px)': {
+            width:"300px",
+                }, '@media screen  and (max-width: 970px)': {
+                  top:"2500px",
+                  width:"500px",
+                  margin:"100px",
+                      }, '@media screen  and (max-width: 1094px)': {
+                        width:"300px",
+                            }, '@media screen  and (max-width: 764px)': {
+                              width:"300px",
+                              top:"2720px",
+                                  },'@media screen  and (max-width: 542px)': {
+                                    width:"300px",
+                                    top:"2700px",
+                                    margin:"10px",
+                                        },'@media screen  and (max-width: 410px)': {
+                                          width:"300px",
+                                          top:"2900px",
+                                          margin:"-70px",
+                                              },'@media screen  and (max-width: 328px)': {
+                                                width:"200px",
+                                                top:"2950px",
+                                               
+                                                    },'@media screen  and (max-width: 232px)': {
+                                                width:"100px",
+                                                top:"2950px",
+                                               
+                                                    },
+    
+
 
   },
 };

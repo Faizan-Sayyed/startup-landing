@@ -35,7 +35,9 @@ const data = [
         with collegeking`,
         description: `CollegeKing is a platform for providing information and guidance to
 class 12 students for exploring colleges and streams.`,
-      
+function:function() {
+  window.open("http://www.collegeking.in")
+},
       },
     ],
   },
@@ -53,7 +55,9 @@ class 12 students for exploring colleges and streams.`,
         title: `Improve your self-learning abilities with the assistance of careerbug`,
         description: `Careerbug is a platform for career exploration and development through guidance and community-driven practices.`,
         readMore: '#introduce-quality',
-        
+        function:function() {
+          window.open("http://careerbug.com/")
+      },
       },
     ],
   },
@@ -74,7 +78,9 @@ class 12 students for exploring colleges and streams.`,
         title: `Get an intuitive experience to fulfill the recruitment needs with HiringBird`,
         description: `HiringBird is a platform designed to make it easy for college students to apply for internships and new jobs.`,
         readMore: '#introduce-quality',
-             
+        function:function() {
+          window.open("http://www.Hiringbird.com")
+      },
          
       },
     ],
@@ -93,7 +99,9 @@ class 12 students for exploring colleges and streams.`,
         image: dashboard3,
         title: `Get guidance from industry experts with  our mentoring platform.`,
         description: `The yet-to-be-named platform focuses on providing mentorship to students through industry experts and making the mentoring process easily accessible to all student in need of mentorship and guidance.`,
-      
+        function:function() {
+          window.open("http://www.google.com")
+      },
         
       },
     ],
@@ -113,7 +121,9 @@ class 12 students for exploring colleges and streams.`,
         description: `The yet-to-be-named platform focuses on fulfiling the material needs of its users and to provide a comfortable user experience through its design and
         interactive sessions.`,
         readMore: '#introduce-quality',
-        
+        function:function() {
+          window.open("http://www.google.com")
+      },
       },
     ],
   },

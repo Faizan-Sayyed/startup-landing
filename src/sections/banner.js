@@ -22,7 +22,7 @@ const Banner = () => {
               educational and career exploration, development and
               growth amongst its users.
             </Text>
-            <SubscriptionForm sx={styles.subscriptionForm} />
+            <SubscriptionForm text="Get Started" sx={styles.subscriptionForm} />
             <Flex sx={styles.sponsoredBy}>
 
               <Flex sx={styles.sponsor}>

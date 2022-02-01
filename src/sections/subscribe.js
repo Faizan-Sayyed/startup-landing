@@ -13,7 +13,7 @@ const Subscribe = () => {
           title="Subscribe to get notified about update"
           description="By subscribing with your mail, you will accept our privacy policy"
         />
-        <SubscriptionForm sx={styles.subscriptionForm} />
+        <SubscriptionForm  text="Subscribe Us" sx={styles.subscriptionForm} />
       </Container>
     </Box>
   );

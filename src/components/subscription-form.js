@@ -2,7 +2,7 @@
 import { jsx, Flex, Input, Button, Label } from 'theme-ui';
 import { useState, useEffect } from 'react';
 
-const SubscriptionForm = ({ buttonLabel, ...props }) => {
+const SubscriptionForm = ({ text, buttonLabel, ...props }) => {
   const [id, setId] = useState('');
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const SubscriptionForm = ({ buttonLabel, ...props }) => {
         id={`email-${id}`}
         placeholder ="Enter your email"
       />
-      <Button  >{buttonLabel ?? 'Get Started'}</Button>
+      <Button  >{text}</Button>
     </Flex>
   );
 };
