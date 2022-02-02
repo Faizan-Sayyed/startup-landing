@@ -102,7 +102,7 @@ const styles = {
   
     backgroundColor: '#F6F8FB',
     borderRadius: 7,
-    flexDirection: ['column', null, null, null, null, 'row'],
+    flexDirection: ['row', null, null, null, null, 'row'],
     alignItems: 'flex-start',
     p: ['25px 25px 20px', null, null, null, '35px 30px', '45px 40px 50px'],
     transition: '0.3s ease-in-out 0s',
