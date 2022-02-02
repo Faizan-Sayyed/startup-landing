@@ -94,6 +94,7 @@ const styles = {
   },
   logo: {
     mr: [null, null, null, null, 30, 12],
+    margin:"-8px",
   },
   navbar: {
     display: ['none', null, null, null, 'flex'],
@@ -117,8 +118,8 @@ const styles = {
     '.nav-item': {
       cursor: 'pointer',
       fontWeight: 400,
-      padding: 0,
-      margin: [null, null, null, null, '0 15px'],
+      padding:0,
+      margin: [null, null, null, null, '0 30px'],
     },
     '.active': {
       color: '#EC1D25',

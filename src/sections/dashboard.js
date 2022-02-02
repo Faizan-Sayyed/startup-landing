@@ -56,7 +56,7 @@ function:function() {
         description: `Careerbug is a platform for career exploration and development through guidance and community-driven practices.`,
         readMore: '#introduce-quality',
         function:function() {
-          window.open("http://careerbug.com/")
+          window.open("http://careerbug.in/")
       },
       },
     ],

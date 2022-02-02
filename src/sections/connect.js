@@ -48,7 +48,9 @@ const Connect = () => {
           {data?.map((item) => (
             <Flex key={item.id} sx={styles.supportItem} >
               <Flex onClick={item.function} as="figure" sx={styles.media} >
-                <Image  onClick={item.function} src={item?.icon} alt={item?.title}  />
+                <img  onClick={item.function} src={item?.icon} alt={item?.title}>
+                  
+                  </img> 
               </Flex>
               <Box sx={styles.content} >
             
@@ -105,6 +107,8 @@ const styles = {
     p: ['25px 25px 20px', null, null, null, '35px 30px', '45px 40px 50px'],
     transition: '0.3s ease-in-out 0s',
     
+   
+
     ':hover': {
       backgroundColor: 'white',
       boxShadow: '0px 15px 60px rgba(63, 90, 130, 0.12)',
@@ -125,7 +129,7 @@ const styles = {
     },
   },
   content: {
-    mt: ['-7px'],
+   
     h2: {
       fontWeight: 700,
       fontSize: [2, null, null, null, 4],
@@ -133,6 +137,8 @@ const styles = {
       color: 'textSecondary',
       display: 'flex',
       alignItems: 'center',
+
+      
       justifyContent: 'space-between',
     },
     p: {
@@ -140,6 +146,9 @@ const styles = {
       lineHeight: [2.13],
       color: 'headingSecondary',
       mt: [3],
+      
+
+      
     },
   },
 };

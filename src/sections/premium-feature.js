@@ -4,29 +4,41 @@ import SectionHeading from 'components/section-heading';
 import Accordion from 'components/accordion/accordion';
 import Image from 'components/image';
 import messenger from 'assets/images/messenger.png';
+import  arrow from 'assets/images/icons/right-arrow.png';
+// import Arrow from "assets/images/rightarrow.png"
+import { rgba } from 'polished';
 
-const data = [
 
-  {
-    title: 'Improve session time',
-    contents: (
-      <div>
-        CollegeKing focuses on
-        improving the time spent by users
-        in each session through its
-        experience and content.
-      </div>
-    ),
-  },
-  {
-    title: `Learn more`,
-    contents: (
-      <div>
-       Learn More.....
-      </div>
-    ),
-  },
-];
+// const data = [
+
+//   {
+//     title: 'Improve session time',
+//     contents: (
+//       <div>
+//         CollegeKing focuses on
+//         improving the time spent by users
+//         in each session through its
+//         experience and content.
+//       </div>
+//     ),
+//   },
+//   {
+//     title: (
+//       <div onClick={function() {
+//         window.open("http://www.coolegeking.in")
+//     }}>Learn More
+       
+//       </div>),
+//        contents: (
+//         <div onClick={function() {
+//           window.open("http://www.coolegeking.in")
+//       }}>
+         
+//         </div>
+//       ),
+   
+//   },
+// ];
 
 const PremiumFeature = () => {
   return (
@@ -37,16 +49,37 @@ const PremiumFeature = () => {
           <Box as="figure" sx={styles.illustration}>
             <Image sx={styles.imm} src={messenger} alt="messenger" />
           </Box></div>
-          <Box sx={styles.rightContent}>
+          <Box  >
             <SectionHeading
 
               sx={styles.heading}
               title="Find the best suited colleges for you with CollegeKing."
               description="Ease the overwhelming process of searching through colleges with the help of CollegeKing’s minimalistic design."
             />
-            <Box sx={styles.accordionGroup}>
+           <Box sx={styles. accordion}>
+           <heading as="h3"  sx={styles.title}> Improve session time
+         
+        </heading ><br/><br/>
+        <text >
+        CollegeKing focuses on
+        improving the time spent by <br/> users
+        in each session through its
+        experience and content.
+        </text>
+        </Box><br/>
+        <Box  onClick={function() {
+          window.open("http://www.coolegeking.in")
+      }} sx={styles. accordion}>
+        <heading as="h3"  sx={styles.title}> Learn More
+        <img src={arrow}
+                    sx={styles.arrow}
+                  ></img>
+         </heading >
+
+        </Box>
+            {/* <Box sx={styles.accordionGroup}>
               <Accordion items={data} />
-            </Box>
+            </Box> */}
           </Box>
         </Grid>
       </Container>
@@ -57,9 +90,39 @@ const PremiumFeature = () => {
 export default PremiumFeature;
 
 const styles = {
+  arrow: {
+  left:"100px"
+  },
+
+  title:{
+    color: 'heading',
+    fontWeight: 500,
+    fontSize: [1, null, null, 2],
+    letterSpacing: [0, null, null, null, 'heading'],
+    lineHeight: [1.5, 1.8],
+  },
+
+  accordion: {
+   
+    backgroundColor: '#F6F8FB',
+    borderRadius: 10,
+    cursor:"pointer",
+    p: ['15px', '20px 30px', '30px 45px', '20px 25px', '20px 35px'],
+    '&.is-open': {
+      backgroundColor: '#fff',
+      boxShadow: '0px 9px 30px rgba(69, 88, 157, 0.08)',
+    }},
+
+
   imm:{
     height:'419px',
-    width:'832px',
+    width:'650px',
+  //     '@media screen and (max-width:666px) ': {
+  //   maxWidth: "500px",
+  // }, '@media screen and (max-width:320px) ': {
+  //   maxWidth: "250px",
+  // },
+   
   },
   section: {
     pt: [6, null, null, 6, 8, 9],
@@ -81,17 +144,19 @@ const styles = {
     ],
   },
   heading: {
-   
-    
-    textAlign: ['left', null, null, 'center', 'left'],
-    ml: [null, null, null, 'auto'],
+   margin:"20px",
+    screenLeft:"900px",
+    textAlign: 'left',
+    ml: [null, null, null, 'auto','35px'],
     maxWidth: [null, null, null, 520, 660],
     h1: {
       fontSize: [null, null, null, 10, 8, 10, 40],
+     
 
     },
     p: {
       fontSize: [null, null, null, 2],
+     
     },
   },
   illustration: {
@@ -117,5 +182,6 @@ rightContent:"500px",
   accordionGroup: {
     m: [null, null, null, '0 auto', 'unset'],
     maxWidth: [null, null, null, 600, 'none'],
+    margin:"10px",
   },
 };

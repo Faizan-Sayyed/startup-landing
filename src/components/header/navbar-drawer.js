@@ -57,10 +57,7 @@ const NavbarDrawer = () => {
             </Box>
           ))}
         </Box>
-        <Button variant="primary" sx={styles.donateNow}>
-          Donate Now
-        </Button>
-      </Box>
+              </Box>
     </Drawer>
   );
 };
@@ -132,8 +129,8 @@ const styles = {
       borderBottom: (t) => `1px solid ${t.colors.borderColor}`,
     },
     '.active': {
-      color: 'primary',
-    },
+      color: '#EC1D25',
+    }, 
   },
   
 };

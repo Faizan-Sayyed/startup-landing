@@ -4,7 +4,9 @@ import Image from 'components/image';
 
 const PieChart = ({ fill, ...props }) => {
   return (
-    <Image src= {hiringbird}></Image>
+    <img 
+    
+    src= {hiringbird}></img>
   );
 };
 

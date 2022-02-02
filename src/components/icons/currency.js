@@ -1,12 +1,15 @@
 import React from 'react';
-import { rgba } from 'polished';
-import logoo from 'assets/images/logo.png';
-import Image from 'components/image';
+
+import Collegeking from 'assets/images/logo.png';
+
 
 const Currency = ({ fill, ...props }) => {
   return (
-    <Image src= {logoo}></Image>
+    <img 
+    src= {Collegeking}></img>
   );
-};
+}; 
+
 
 export default Currency;
+

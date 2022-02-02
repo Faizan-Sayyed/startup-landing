@@ -41,7 +41,7 @@ export default function Accordion({ items, ...props }) {
               </AccordionButton>
               <AccordionContents
                 isOpen={openIndexes.includes(index)}
-                sx={styles.content}
+                sx={  styles.content}
               >
                 {item.contents}
               </AccordionContents>
