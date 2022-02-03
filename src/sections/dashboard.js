@@ -79,7 +79,7 @@ function:function() {
         description: `HiringBird is a platform designed to make it easy for college students to apply for internships and new jobs.`,
         readMore: '#introduce-quality',
         function:function() {
-          window.open("http://www.Hiringbird.com")
+          window.open("http://www.Hiringbird.in")
       },
          
       },
@@ -100,7 +100,7 @@ function:function() {
         title: `Get guidance from industry experts with  our mentoring platform.`,
         description: `The yet-to-be-named platform focuses on providing mentorship to students through industry experts and making the mentoring process easily accessible to all student in need of mentorship and guidance.`,
         function:function() {
-          window.open("http://www.google.com")
+          window.open("http://www.hiringbird.in")
       },
         
       },
@@ -122,7 +122,7 @@ function:function() {
         interactive sessions.`,
         readMore: '#introduce-quality',
         function:function() {
-          window.open("http://www.google.com")
+          window.open("http://www.hiringbird.in")
       },
       },
     ],
@@ -175,10 +175,6 @@ const Dashboard = () => {
 export default Dashboard;
 
 const styles = {
-
-  thth:{
-
-  },
   section: {
     backgroundColor: '#353448',
     pt: [9, null, null, 11, 10, 12, null],

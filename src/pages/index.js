@@ -11,6 +11,7 @@ import Dashboard from 'sections/dashboard';
 import Team from 'sections/our-team';
 import Testimonials from 'sections/testimonials';
 import Subscribe from 'sections/subscribe';
+
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
@@ -22,6 +23,7 @@ export default function IndexPage() {
         <link rel = 'short ' type='image' href='src/assets/images/emoji'></link>
         <Banner />
         <Connect />
+        
         <PremiumFeature />
         <Product />
         <Dashboard />

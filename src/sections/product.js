@@ -1,35 +1,9 @@
 /** @jsx jsx */
-import { jsx, Box, Grid, Flex, Container, Image, Text } from 'theme-ui';
+import { jsx, Box, Grid, Flex, Container, Image, Heading,Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import app from 'assets/images/app.png';
-import Accordion from 'components/accordion/accordion';
+
 import  arrow from 'assets/images/icons/right-arrow.png';
-// import Image from 'components/image';
-
-
-// const data = [
-
-//   {
-//     title: 'Fulfill recruitment needs',
-//     contents: (
-//       <div>
-//        HiringBird focuses exclusively on
-// the internship needs of college
-// students and the recruitment
-// needs of freshers.
-//       </div>
-//     ),
-//   },
-//   {
-//     title:  (
-//       <div onClick={function() {
-//         window.open("http://www.hiringbird.in")
-//     }}>Learn More
-       
-//       </div>),
-   
-//   },
-// ];
 
 const AppFeature = () => {
   return (
@@ -45,14 +19,9 @@ const AppFeature = () => {
               an intuitive user experience
               through its design and sessions."
             />
-            {/* <Box sx={styles.features}>
-              {data?.map(({ id, label }) => (
-                <Flex key={id} as="span" sx={{ alignItems: 'flex-start' }}>
-                  <Text as="span">{label}</Text>
-                </Flex>
-              ))} */}
+          
 
-              {/* <div sx={styles.bigbox}>
+              <div sx={styles.bigbox}>
 
 <Box sx={styles. accordion}>
            <heading as="h3"  sx={styles.title}> Improve session time
@@ -67,24 +36,22 @@ needs of freshers.
         </Box><br/>
 
         <Box  onClick={function() {
-          window.open("http://www.coolegeking.in")
+          window.open("http://www.hiringbird.in")
       }} sx={styles. accordion}>
-        <heading as="h3"  sx={styles.title}> Learn More
+        <Heading as="h3"  sx={styles.title}> Learn More
         <Image src={arrow}
                     sx={styles.arrow}
                   ></Image>
-         </heading >
+         </Heading >
 
         </Box>
 
-</div> */}
+</div>
 
               
-               {/* <Box sx={styles.accordionGroup}>
-              <Accordion items={data} />
-              </Box> */}
+           
             </Box>
-          {/* </Box> */}
+      
           <Box sx={styles.illustration}>
             <Image sx={styles.appp} src={app} alt="workHard" />
           </Box>
@@ -97,16 +64,16 @@ needs of freshers.
 export default AppFeature;
 
 const styles = {
-
-  bigbox:{
-position:"absolute",
-width:"400px",
-top:"1760px",
-margin:"-0px",
-  },
-
   arrow: {
-    left:"100px"
+    marginLeft:"220px",
+    position:"relative",
+    '@media screen and (max-width:303px) ': {
+      marginLeft :"100px",
+      
+      },'@media screen and (max-width:375px) ': {
+        marginLeft :"150px",
+        
+        },
     },
   
     title:{
@@ -124,10 +91,7 @@ margin:"-0px",
       borderRadius: 10,
       cursor:"pointer",
       p: ['15px', '20px 30px', '30px 45px', '20px 25px', '20px 35px'],
-      '&.is-open': {
-        backgroundColor: '#fff',
-        boxShadow: '0px 9px 30px rgba(69, 88, 157, 0.08)',
-      }},
+     },
   
 
   section: {
@@ -143,15 +107,17 @@ margin:"-0px",
   },
   
   appp: {
-    height:'450px',
-    width:'2090px',
+  //  width:'900px',
+  //  margin:"-30px",
     // marginBottom:"170px",
+    height:"400px",
+
   },
   
   heading: {
     maxWidth: ['auto', null, null, '462px', 'auto'],
     textAlign: ['center', null, null, null, 'left'],
-    margin:"20px",
+    margin:"10px",
     mb: ['300px'],
     ml: [],
     h1: {
@@ -210,43 +176,16 @@ margin:"-0px",
     //   marginBottom: 40,
     // },
   },
-// //   accordionGroup: {
-// //     position: "absolute",
-// //         width: "350px",
-// //     height: "80px",
-// //     left: "109px",
-// //     top: "1780px",
+  bigbox:{
+    // position:"absolute",
+    // width:"400px",
+    // top:"1760px",
+    // margin:"-0px",
+    //   },
+    // '@media screen  and (max-width: 425px)': {
+    //   top:"4950px",
+      marginTop:"-280px",
+      marginLeft:"-10px",
+          },
 
-// //       m: [null, null, null, '0 auto', 'unset'],
-// //     maxWidth: [null, null, null, 600, 'none'],
-// //     '@media screen and (max-width: 1326px)': {
-// // top:"1650px",
-// //     },
-// //     '@media screen  and (max-width: 1182px)': {
-// //       top:"1950px",
-// //           },
-// //           '@media screen  and (max-width: 1094px)': {
-// //             width:"300px",
-// //                 }, '@media screen  and (max-width: 970px)': {
-// //                   top:"2500px",
-// //                   width:"500px",
-// //                   margin:"100px",
-// //                       }, '@media screen  and (max-width: 1094px)': {
-// //                         width:"300px",
-// //                             }, '@media screen  and (max-width: 764px)': {
-// //                               width:"300px",
-// //                               top:"2720px",
-// //                                   },'@media screen  and (max-width: 542px)': {
-// //                                     width:"300px",
-// //                                     top:"2700px",
-// //                                     margin:"10px",
-// //                                         },'@media screen  and (max-width: 410px)': {
-// //                                           width:"300px",
-// //                                           top:"2950px",
-// //                                           margin:"-70px",
-// //                                               },
-    
-
-
-//   },
 };

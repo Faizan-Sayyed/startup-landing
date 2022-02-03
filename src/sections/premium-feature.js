@@ -1,54 +1,20 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Grid } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
-import Accordion from 'components/accordion/accordion';
 import Image from 'components/image';
 import messenger from 'assets/images/messenger.png';
 import  arrow from 'assets/images/icons/right-arrow.png';
-// import Arrow from "assets/images/rightarrow.png"
-import { rgba } from 'polished';
 
-
-// const data = [
-
-//   {
-//     title: 'Improve session time',
-//     contents: (
-//       <div>
-//         CollegeKing focuses on
-//         improving the time spent by users
-//         in each session through its
-//         experience and content.
-//       </div>
-//     ),
-//   },
-//   {
-//     title: (
-//       <div onClick={function() {
-//         window.open("http://www.coolegeking.in")
-//     }}>Learn More
-       
-//       </div>),
-//        contents: (
-//         <div onClick={function() {
-//           window.open("http://www.coolegeking.in")
-//       }}>
-         
-//         </div>
-//       ),
-   
-//   },
-// ];
 
 const PremiumFeature = () => {
   return (
     <section id="product" sx={styles.section}>
       <Container>
         <Grid sx={styles.grid}>
-          <div className='bord'sx={styles.bord}>
+          
           <Box as="figure" sx={styles.illustration}>
             <Image sx={styles.imm} src={messenger} alt="messenger" />
-          </Box></div>
+          </Box>
           <Box  >
             <SectionHeading
 
@@ -68,13 +34,14 @@ const PremiumFeature = () => {
         </text>
         </Box><br/>
         <Box  onClick={function() {
-          window.open("http://www.coolegeking.in")
+          window.open("http://www.collegeking.in")
       }} sx={styles. accordion}>
         <heading as="h3"  sx={styles.title}> Learn More
+       
+         </heading >
         <img src={arrow}
                     sx={styles.arrow}
                   ></img>
-         </heading >
 
         </Box>
             {/* <Box sx={styles.accordionGroup}>
@@ -91,7 +58,19 @@ export default PremiumFeature;
 
 const styles = {
   arrow: {
-  left:"100px"
+marginLeft :"350px",
+'@media screen and (max-width:425px) ': {
+  marginLeft :"190px",
+  },'@media screen and (max-width:320px) ': {
+    marginLeft :"40px",
+    
+    },'@media screen and (max-width:303px) ': {
+      marginLeft :"100px",
+      
+      },'@media screen and (max-width:375px) ': {
+        marginLeft :"150px",
+        
+        },
   },
 
   title:{
@@ -115,8 +94,9 @@ const styles = {
 
 
   imm:{
-    height:'419px',
-    width:'650px',
+    height:'400px',
+    // width:'750px',
+    // margin:"-10px",
   //     '@media screen and (max-width:666px) ': {
   //   maxWidth: "500px",
   // }, '@media screen and (max-width:320px) ': {
@@ -145,9 +125,9 @@ const styles = {
   },
   heading: {
    margin:"20px",
-    screenLeft:"900px",
+    // screenLeft:"900px",
     textAlign: 'left',
-    ml: [null, null, null, 'auto','35px'],
+    ml: [null, null, null, 'auto','30px'],
     maxWidth: [null, null, null, 520, 660],
     h1: {
       fontSize: [null, null, null, 10, 8, 10, 40],
@@ -160,9 +140,11 @@ const styles = {
     },
   },
   illustration: {
-    mb: [-6, null, null, -8, 0],
+    // mb: [-6, null, null, -8, 0],
    
-  //  width:"700px",
+  //  width:"600px",
+  //  marginRight:"10px",
+   
   //  '@media screen and (max-width:602px) ': {
   //   maxWidth: 200,
   // },
@@ -173,9 +155,9 @@ const styles = {
     backgroundcolor: "#353448",
 
 height: "400px",
-screenLeft: "164px",
-screenTop: "1223px",
-rightContent:"500px",
+// screenLeft: "164px",
+// screenTop: "1223px",
+// rightContent:"500px",
 
   },
   

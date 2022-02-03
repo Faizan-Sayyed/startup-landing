@@ -37,10 +37,10 @@ const styles = {
       width: 'auto',
       border: '#EC1D25',
 
-      placeholder: {
-        border : "#EC1D25",
+      // placeholder: {
+      //   backgroundColor : "#EC1D25",
 
-      },
+      // },
     
     },
     button: {

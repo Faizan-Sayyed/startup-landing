@@ -6,7 +6,7 @@ import Image from 'components/image';
 const Logo = ({ isWhite, ...props }) => {
   return (
   <box>
-  <Flex as="figure" sx={styles.bannerImage}>
+  <Flex as="figure">
   <Image sx={styles.top} src={toplogo} alt="illustration" />
 </Flex>
 </box>
@@ -15,11 +15,11 @@ const Logo = ({ isWhite, ...props }) => {
 
 export default Logo;
 const styles = {
-  bannerImage: {
-    alignItems: 'left',
-    mt: [9, null, null, null, 1],
-  },
+ 
 top:{
   left:"700px",
+  '@media screen  and (max-width: 992px)': {
+          
+                    },
 }
   }
